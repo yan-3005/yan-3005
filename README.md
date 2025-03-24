@@ -14,7 +14,7 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-## ⌨️ Software Development Engineer 1 at Oracle, Backend Developer 
+## ⌨️ Software Development Engineer 2 at Oracle, Backend Developer 
 -  Aspiring to be full fledged Backend Developer with DevOps Capabilities
 -  Focuses on Skills , Always Learning new tech stacks and focussed on improving my career
 
@@ -58,7 +58,7 @@ Here are some ideas to get you started:
       - Backend
     
     ### 🤝**Connect with me**
-      [LinkedIn](https://www.linkedin.com/in/ram-narayan-balaji-1603391b8/)
+      [LinkedIn](https://www.linkedin.com/in/ram-narayan-balaji-954a6a31a/)
     
     ### :Fun Fact
       🥊Learning Kickboxing
