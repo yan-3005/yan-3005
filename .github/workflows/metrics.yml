@@ -6,7 +6,9 @@ on:
     - cron: "0 0 * * *"
   workflow_dispatch: # Allow manual triggering
   push:
-    branches: [ "main" ]
+    branches: ["main"]
+    paths:
+      - ".github/workflows/metrics.yml"
 
 jobs:
   github-metrics:
@@ -16,20 +18,21 @@ jobs:
     steps:
       - uses: lowlighter/metrics@latest
         with:
+          # Your GitHub token
           token: ${{ secrets.METRICS_TOKEN }}
 
           # Options
-          user: yan-3005
+          user: ${{ github.repository_owner }}
           template: classic
-          base: header, activity, repositories, metadata
+          base: header, activity, repositories
           config_timezone: Asia/Kolkata
+          repositories_forks: true
+          repositories_affiliations: owner, collaborator, organization_member
+          repositories_skipped: ""
 
           # Display stats
           plugin_lines: yes
           plugin_traffic: yes
-          plugin_habits: yes
-          plugin_habits_facts: yes
-          plugin_habits_charts: yes
 
           # Display most used languages
           plugin_languages: yes
@@ -37,6 +40,12 @@ jobs:
           plugin_languages_details: bytes-size, percentage
           plugin_languages_sections: most-used, recently-used
           plugin_languages_limit: 8
+          plugin_languages_analysis_timeout: 15
+          plugin_languages_categories: programming
+          plugin_languages_recent_categories: programming
+          plugin_languages_recent_days: 14
+          plugin_languages_recent_load: 300
+          plugin_languages_threshold: 0%
 
           # Display isometric calendar (365 days)
           plugin_isocalendar: yes
@@ -53,25 +62,22 @@ jobs:
           plugin_achievements_display: detailed
           plugin_achievements_threshold: C
 
+          # Display contributions
+          plugin_notable: yes
+          plugin_notable_from: organization
+          plugin_notable_types: commit
+          plugin_notable_repositories: yes
+
           # Display recently starred repositories
           plugin_stars: yes
           plugin_stars_limit: 4
 
-          # Display code contributions
-          plugin_notable: yes
-          plugin_notable_filter: only:commits
-          plugin_notable_repositories: yes
-
-          # Display discussions
-          plugin_discussions: yes
-
           # Display followers
           plugin_people: yes
           plugin_people_types: followers, following
-          plugin_people_limit: 28
+          plugin_people_limit: 24
           plugin_people_size: 28
 
-          # Display repository contributors
-          plugin_contributors: yes
-          plugin_contributors_base: ""
-          plugin_contributors_head: master
+          outputs: |
+            github-metrics.svg
+            metrics/*.svg

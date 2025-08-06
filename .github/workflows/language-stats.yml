@@ -1,0 +1,196 @@
+name: Update Language Stats
+
+on:
+  schedule:
+    - cron: "0 0 * * 0"  # Run weekly on Sunday at midnight
+  workflow_dispatch:  # Allow manual triggering
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/language-stats.yml'
+
+jobs:
+  update-language-stats:
+    name: Update Language Statistics
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install PyGithub==1.59.0 matplotlib pandas
+
+      - name: Generate accurate language stats
+        run: |
+          mkdir -p dist
+          python - << 'EOF'
+          import os
+          import pandas as pd
+          import matplotlib.pyplot as plt
+          from github import Github
+          import base64
+          from collections import defaultdict
+
+          # Get GitHub token from secrets
+          github_token = os.environ.get("GITHUB_TOKEN")
+          username = os.environ.get("GITHUB_REPOSITORY_OWNER")
+
+          # Create a Github instance
+          g = Github(github_token)
+
+          # Initialize dictionary to store language stats
+          language_stats = defaultdict(int)
+          total_bytes = 0
+
+          # Get the user
+          user = g.get_user(username)
+
+          # Process repositories
+          print(f"Analyzing repositories for {username}...")
+
+          # Process user's repos
+          for repo in user.get_repos():
+              if repo.fork:  # Skip forks for now
+                  continue
+
+              try:
+                  print(f"Processing repo: {repo.name}")
+                  languages = repo.get_languages()
+                  for lang, bytes_count in languages.items():
+                      language_stats[lang] += bytes_count
+                      total_bytes += bytes_count
+              except Exception as e:
+                  print(f"Error processing repo {repo.name}: {e}")
+
+          # Process contributed repos
+          # This requires listing all organizations the user belongs to
+          # Then checking repositories they've contributed to
+          for org in user.get_orgs():
+              for repo in org.get_repos():
+                  try:
+                      # Check if user has contributed to this repo
+                      contributors = repo.get_contributors()
+                      is_contributor = False
+                      for contributor in contributors:
+                          if contributor.login == username:
+                              is_contributor = True
+                              break
+
+                      if is_contributor:
+                          print(f"Processing contribution to org repo: {repo.name}")
+                          languages = repo.get_languages()
+                          for lang, bytes_count in languages.items():
+                              # We weight contributions to other repos at 70%
+                              language_stats[lang] += int(bytes_count * 0.7)
+                              total_bytes += int(bytes_count * 0.7)
+                  except Exception as e:
+                      print(f"Error processing org repo {repo.name}: {e}")
+
+          # Convert to percentage
+          language_percentage = {lang: (bytes_count / total_bytes) * 100
+                               for lang, bytes_count in language_stats.items()}
+
+          # Sort by percentage
+          sorted_languages = sorted(language_percentage.items(),
+                                  key=lambda x: x[1], reverse=True)
+
+          # Take top 8 languages
+          top_languages = sorted_languages[:8]
+
+          # Generate pie chart
+          labels = [lang for lang, _ in top_languages]
+          sizes = [pct for _, pct in top_languages]
+
+          # Define custom colors
+          colors = ['#ff6b6b', '#48dbfb', '#1dd1a1', '#feca57',
+                   '#54a0ff', '#5f27cd', '#ee5253', '#00d2d3']
+
+          # Create figure with dark background
+          plt.figure(figsize=(10, 6), facecolor='#151515')
+          ax = plt.subplot(111)
+          ax.set_facecolor('#151515')
+
+          # Plot pie chart
+          wedges, texts, autotexts = ax.pie(sizes,
+                                          labels=None,
+                                          autopct='%1.1f%%',
+                                          startangle=90,
+                                          colors=colors[:len(sizes)],
+                                          wedgeprops={'edgecolor': '#151515', 'linewidth': 1})
+
+          # Make percentages white
+          for autotext in autotexts:
+              autotext.set_color('white')
+              autotext.set_fontsize(9)
+
+          # Add legend
+          legend_labels = [f"{lang} ({pct:.1f}%)" for lang, pct in top_languages]
+          ax.legend(wedges, legend_labels, loc="center left", bbox_to_anchor=(0.9, 0.5),
+                  frameon=False, fontsize=9, labelcolor='white')
+
+          # Add title
+          plt.title(f"{username}'s Language Distribution", color='white', fontsize=14, pad=20)
+
+          # Remove axis
+          plt.axis('equal')
+
+          # Save the figure
+          plt.savefig('dist/language-stats.png', facecolor='#151515', bbox_inches='tight', dpi=300)
+          print("Language stats chart generated successfully.")
+
+          # Create a Markdown formatted version for README inclusion
+          with open('dist/language-stats.md', 'w') as f:
+              f.write("## Language Distribution\n\n")
+              for lang, pct in top_languages:
+                  # Create a progress bar
+                  bar_length = int(pct / 2)  # Scale to 50 max
+                  bar = '█' * bar_length + '░' * (50 - bar_length)
+                  f.write(f"{lang:<10} {bar} {pct:.1f}%\n")
+
+          print("Language stats markdown generated successfully.")
+          EOF
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          PYTHONIOENCODING: utf-8
+
+      - name: Update README with Language Stats
+        run: |
+          if [ -f dist/language-stats.md ]; then
+            # Replace the language stats section in the README
+            README_FILE="README.md"
+            START_MARKER="<!-- START_SECTION:lang-stats -->"
+            END_MARKER="<!-- END_SECTION:lang-stats -->"
+
+            # Check if markers exist, add them if not
+            if ! grep -q "$START_MARKER" "$README_FILE"; then
+              sed -i '/## ⏱ Weekly Development Breakdown/i \<!-- START_SECTION:lang-stats -->\n<!-- END_SECTION:lang-stats -->\n' "$README_FILE"
+            fi
+
+            # Replace content between markers
+            sed -i "/$START_MARKER/,/$END_MARKER/c\\$START_MARKER\n$(cat dist/language-stats.md)\n$END_MARKER" "$README_FILE"
+
+            echo "README updated with language stats."
+          else
+            echo "Language stats file not found."
+          fi
+
+      - name: Push changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: "Update language stats"
+          add: |
+            README.md
+            dist/language-stats.png
+            dist/language-stats.md
+          push: true
