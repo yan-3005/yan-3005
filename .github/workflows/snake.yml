@@ -11,7 +11,7 @@ on:
     branches:
       - main
     paths:
-      - '.github/workflows/snake.yml'
+      - ".github/workflows/snake.yml"
 
 jobs:
   build:
@@ -33,7 +33,7 @@ jobs:
       - name: Push to GitHub
         uses: EndBug/add-and-commit@v9
         with:
-          message: 'Generate Snake Animation'
+          message: "Generate Snake Animation"
           add: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg

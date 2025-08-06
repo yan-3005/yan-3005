@@ -19,7 +19,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.10'
+          python-version: "3.10"
 
       - name: Install dependencies
         run: |
@@ -58,8 +58,8 @@ jobs:
               headers = {
                   "User-Agent": "Profile-Views-Counter"
               }
-              if "GH_TOKEN" in os.environ:
-                  headers["Authorization"] = f"token {os.environ['GH_TOKEN']}"
+              if "GITHUB_TOKEN" in os.environ:
+                  headers["Authorization"] = f"token {os.environ['GITHUB_TOKEN']}"
 
               # Use GitHub API to get profile views (if available with token)
               response = requests.get(f"https://api.github.com/users/{username}", headers=headers)
