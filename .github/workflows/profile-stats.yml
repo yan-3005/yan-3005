@@ -32,7 +32,7 @@ jobs:
       - name: Update README with WakaTime stats
         uses: anmol098/waka-readme-stats@master
         with:
-          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          WAKATIME_API_KEY: waka_5eb81ab6-d7c9-48c3-b752-d153cbd1c35e
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
           SHOW_LINES_OF_CODE: "True"
@@ -48,7 +48,6 @@ jobs:
           SHOW_SHORT_INFO: "True"
           SHOW_LOC_CHART: "True"
           SYMBOL_VERSION: 3
-          IGNORED_REPOS: "Ignored,Repos,Here"
           COUNT_PRIVATE: "True"
           COMMIT_BY_ME: "True"
           INCLUDE_ALL_COMMITS: "True"

@@ -44,6 +44,8 @@
   <img width="90%" src="https://github-readme-stats.vercel.app/api/wakatime?username=yan_3005&layout=compact&theme=radical&hide_border=true" alt="WakaTime Stats" />
 </div>
 
+
+
 ## ⌨️ Software Development Engineer 2 at Oracle, Backend Developer 
 -  Aspiring to be full fledged Backend Developer with DevOps Capabilities
 -  Focuses on Skills, Always Learning new tech stacks and focused on improving my career
@@ -181,11 +183,7 @@ C          ░░░░░░░░░░░░░░░░░░░░░░░
 
 <!-- START_SECTION:waka -->
 ```text
-Java         █████████████████░░░░░░   68.23% 
-Python       ████░░░░░░░░░░░░░░░░░░░   15.10% 
-Bash         ██░░░░░░░░░░░░░░░░░░░░░   8.47% 
-Other        █░░░░░░░░░░░░░░░░░░░░░░   5.32%
-C++          ░░░░░░░░░░░░░░░░░░░░░░░   2.88%
+No activity tracked
 ```
 <!-- END_SECTION:waka -->
 
