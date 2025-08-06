@@ -35,7 +35,11 @@
 ## 📈 Contribution Graph
 <div align="center">
   <a href="https://github.com/yan-3005">
-    <img width="90%" alt="Snake Animation" src="https://github.com/yan-3005/yan-3005/blob/main/dist/github-contribution-grid-snake.svg"/>
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yan-3005/yan-3005/main/dist/github-contribution-grid-snake-dark.svg" />
+      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/yan-3005/yan-3005/main/dist/github-contribution-grid-snake.svg" />
+      <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/yan-3005/yan-3005/main/dist/github-contribution-grid-snake.svg" width="95%">
+    </picture>
   </a>
 </div>
 
