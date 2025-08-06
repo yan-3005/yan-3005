@@ -1,0 +1,38 @@
+name: Update GitHub Streak Stats
+
+on:
+  schedule:
+    # Runs every day at midnight
+    - cron: '0 0 * * *'
+  workflow_dispatch: # Allow manual triggering
+
+jobs:
+  update-streak-stats:
+    name: Update GitHub Streak Stats
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Generate Streak Stats Image
+        uses: DenverCoder1/github-readme-streak-stats@v1.3.0
+        with:
+          user: yan-3005
+          theme: dark
+          hide_border: true
+          background: 000000
+          output: streak-stats.svg
+
+      - name: Move Generated Image
+        run: |
+          mkdir -p dist
+          mv streak-stats.svg dist/
+
+      - name: Push to GitHub
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: 'Update GitHub streak stats'
+          add: 'dist/streak-stats.svg'
