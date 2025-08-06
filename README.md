@@ -39,9 +39,9 @@
   </a>
 </div>
 
-## 👨‍💻 WakaTime Stats
+## 👨‍💻 Coding Activity
 <div align="center">
-  <img width="90%" src="https://github-readme-stats.vercel.app/api/wakatime?username=yan_3005&layout=compact&theme=radical&hide_border=true" alt="WakaTime Stats" />
+  <img src="https://raw.githubusercontent.com/SP-XD/SP-XD/main/images/dev-working_rounded.gif" width="300" />
 </div>
 
 
@@ -174,19 +174,12 @@ CSS        ░░░░░░░░░░░░░░░░░░░░░░░
 C          ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░   0.2%
 <!-- END_SECTION:lang-stats -->
 
-## ⏱ Weekly Development Breakdown
+## ⏱ Weekly Development Focus
 <div align="center">
-  <img src="https://raw.githubusercontent.com/SP-XD/SP-XD/main/images/dev-working_rounded.gif" width="300" />
-</div>
-
-<div align="center">
-
-<!-- START_SECTION:waka -->
-```text
-No activity tracked
-```
-<!-- END_SECTION:waka -->
-
+  <img src="https://img.shields.io/badge/Java-68%25-red?style=for-the-badge&logo=java&logoColor=white" alt="Java 68%" />
+  <img src="https://img.shields.io/badge/Python-15%25-blue?style=for-the-badge&logo=python&logoColor=white" alt="Python 15%" />
+  <img src="https://img.shields.io/badge/Bash-9%25-green?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="Bash 9%" />
+  <img src="https://img.shields.io/badge/Other-8%25-lightgrey?style=for-the-badge" alt="Other 8%" />
 </div>
 
 ## 🔄 Recent Activity
