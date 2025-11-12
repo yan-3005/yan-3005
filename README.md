@@ -188,11 +188,11 @@ C          ░░░░░░░░░░░░░░░░░░░░░░░
 
 ## 🔄 Recent Activity
 <!--START_SECTION:activity-->
-1. ❌ Labeled PR [#24275](undefined) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
-2. 💪 Opened PR [#24275](undefined) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
-3. ❌ Assigned PR [#24275](undefined) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
-4. 🔒 Closed issue [#24100](https://github.com/open-metadata/OpenMetadata/issues/24100) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
-5. 🗣 Commented on [#24040](https://github.com/open-metadata/OpenMetadata/pull/24040#issuecomment-3498020949) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
+1.  Assigned issue [#24302](https://github.com/open-metadata/OpenMetadata/issues/24302) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
+2. ❗ Opened issue [#24302](https://github.com/open-metadata/OpenMetadata/issues/24302) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
+3. ❌ Labeled PR [#24275](undefined) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
+4. 💪 Opened PR [#24275](undefined) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
+5. ❌ Assigned PR [#24275](undefined) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
 <!--END_SECTION:activity-->
 
 <!--
