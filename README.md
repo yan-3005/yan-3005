@@ -190,9 +190,9 @@ C          ░░░░░░░░░░░░░░░░░░░░░░░
 <!--START_SECTION:activity-->
 1. ❌ Labeled PR [#24635](undefined) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
 2. ❌ Labeled PR [#24635](undefined) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
-3. 💪 Opened PR [#24635](undefined) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
-4. ❌ Assigned PR [#24635](undefined) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
-5. 🗣 Commented on [#24522](https://github.com/open-metadata/OpenMetadata/pull/24522#issuecomment-3594389184) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
+3. ❌ Labeled PR [#24635](undefined) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
+4. 💪 Opened PR [#24635](undefined) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
+5. ❌ Assigned PR [#24635](undefined) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
 <!--END_SECTION:activity-->
 
 <!--
