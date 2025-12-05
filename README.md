@@ -188,11 +188,11 @@ C          ░░░░░░░░░░░░░░░░░░░░░░░
 
 ## 🔄 Recent Activity
 <!--START_SECTION:activity-->
-1. ❌ Labeled PR [#69](undefined) in [open-metadata/docs-collate](https://github.com/open-metadata/docs-collate)
-2. 💪 Opened PR [#69](undefined) in [open-metadata/docs-collate](https://github.com/open-metadata/docs-collate)
-3. ❌ Assigned PR [#69](undefined) in [open-metadata/docs-collate](https://github.com/open-metadata/docs-collate)
-4. ❌ Labeled PR [#24649](undefined) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
-5. ❌ Labeled PR [#24649](undefined) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
+1. 🗣 Commented on [#24367](https://github.com/open-metadata/OpenMetadata/pull/24367#issuecomment-3616413026) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
+2. ❌ Merged PR [#24367](undefined) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
+3. 🗣 Commented on [#24649](https://github.com/open-metadata/OpenMetadata/pull/24649#issuecomment-3616398559) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
+4. ❌ Merged PR [#24649](undefined) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
+5. ❌ Labeled PR [#69](undefined) in [open-metadata/docs-collate](https://github.com/open-metadata/docs-collate)
 <!--END_SECTION:activity-->
 
 <!--
