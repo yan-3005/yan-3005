@@ -188,11 +188,11 @@ C          ░░░░░░░░░░░░░░░░░░░░░░░
 
 ## 🔄 Recent Activity
 <!--START_SECTION:activity-->
-1. ❌ Assigned PR [#24731](undefined) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
+1. ❌ Labeled PR [#24635](undefined) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
 2. ❌ Assigned PR [#24731](undefined) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
-3. ❌ Labeled PR [#24731](undefined) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
-4. ❌ Merged PR [#69](undefined) in [open-metadata/docs-collate](https://github.com/open-metadata/docs-collate)
-5. ❌ Labeled PR [#24731](undefined) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
+3. ❌ Assigned PR [#24731](undefined) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
+4. ❌ Labeled PR [#24731](undefined) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
+5. ❌ Merged PR [#69](undefined) in [open-metadata/docs-collate](https://github.com/open-metadata/docs-collate)
 <!--END_SECTION:activity-->
 
 <!--
