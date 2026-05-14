@@ -188,11 +188,11 @@ C          ░░░░░░░░░░░░░░░░░░░░░░░
 
 ## 🔄 Recent Activity
 <!--START_SECTION:activity-->
-1. 🗣 Commented on [#28000](https://github.com/open-metadata/OpenMetadata/pull/28000#issuecomment-4441380770) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
-2. ❌ Closed PR [#28000](https://github.com/open-metadata/OpenMetadata/pull/28000) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
-3. 🎉 Merged PR [#28067](https://github.com/open-metadata/OpenMetadata/pull/28067) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
-4. ℹ️ Assigned PR [#28067](https://github.com/open-metadata/OpenMetadata/pull/28067) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
-5. ℹ️ Unlabeled PR [#28067](https://github.com/open-metadata/OpenMetadata/pull/28067) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
+1. ℹ️ Labeled PR [#28106](https://github.com/open-metadata/OpenMetadata/pull/28106) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
+2. ℹ️ Labeled PR [#28106](https://github.com/open-metadata/OpenMetadata/pull/28106) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
+3. ℹ️ Labeled PR [#28106](https://github.com/open-metadata/OpenMetadata/pull/28106) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
+4. ℹ️ Labeled PR [#28106](https://github.com/open-metadata/OpenMetadata/pull/28106) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
+5. ℹ️ Labeled PR [#28106](https://github.com/open-metadata/OpenMetadata/pull/28106) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
 <!--END_SECTION:activity-->
 
 <!--
