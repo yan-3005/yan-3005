@@ -188,11 +188,11 @@ C          ░░░░░░░░░░░░░░░░░░░░░░░
 
 ## 🔄 Recent Activity
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#28269](https://github.com/open-metadata/OpenMetadata/pull/28269) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
-2. 🎉 Merged PR [#26918](https://github.com/open-metadata/OpenMetadata/pull/26918) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
-3. 🎉 Merged PR [#27081](https://github.com/open-metadata/OpenMetadata/pull/27081) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
-4. ℹ️ Assigned PR [#28269](https://github.com/open-metadata/OpenMetadata/pull/28269) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
-5. 🔒 Closed issue [#28031](https://github.com/open-metadata/OpenMetadata/issues/28031) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
+1. 🎉 Merged PR [#28249](https://github.com/open-metadata/OpenMetadata/pull/28249) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
+2. 🎉 Merged PR [#28269](https://github.com/open-metadata/OpenMetadata/pull/28269) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
+3. 🎉 Merged PR [#26918](https://github.com/open-metadata/OpenMetadata/pull/26918) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
+4. 🎉 Merged PR [#27081](https://github.com/open-metadata/OpenMetadata/pull/27081) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
+5. ℹ️ Assigned PR [#28269](https://github.com/open-metadata/OpenMetadata/pull/28269) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
 <!--END_SECTION:activity-->
 
 <!--
