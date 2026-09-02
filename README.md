@@ -80,11 +80,11 @@ Mostly working in Java and Spring Boot; care a lot about API contracts, integrat
 
 ### Recent Activity
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#32326](https://github.com/open-metadata/OpenMetadata/pull/32326) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
-2. 💪 Opened PR [#32408](https://github.com/open-metadata/OpenMetadata/pull/32408) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
-3. 🎉 Merged PR [#32380](https://github.com/open-metadata/OpenMetadata/pull/32380) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
-4. 🎉 Merged PR [#32354](https://github.com/open-metadata/OpenMetadata/pull/32354) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
-5. 💪 Opened PR [#32380](https://github.com/open-metadata/OpenMetadata/pull/32380) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
+1. 🎉 Merged PR [#32408](https://github.com/open-metadata/OpenMetadata/pull/32408) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
+2. 🎉 Merged PR [#32326](https://github.com/open-metadata/OpenMetadata/pull/32326) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
+3. 💪 Opened PR [#32408](https://github.com/open-metadata/OpenMetadata/pull/32408) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
+4. 🎉 Merged PR [#32380](https://github.com/open-metadata/OpenMetadata/pull/32380) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
+5. 🎉 Merged PR [#32354](https://github.com/open-metadata/OpenMetadata/pull/32354) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
 <!--END_SECTION:activity-->
 
 ---
