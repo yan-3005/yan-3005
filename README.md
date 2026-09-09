@@ -80,11 +80,11 @@ Mostly working in Java and Spring Boot; care a lot about API contracts, integrat
 
 ### Recent Activity
 <!--START_SECTION:activity-->
-1. ℹ️ Assigned PR [#32886](https://github.com/open-metadata/OpenMetadata/pull/32886) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
-2. 🗣 Commented on [#31692](https://github.com/open-metadata/OpenMetadata/issues/31692#issuecomment-5579901758) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
-3. 🎉 Merged PR [#32373](https://github.com/open-metadata/OpenMetadata/pull/32373) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
-4. 💪 Opened PR [#32886](https://github.com/open-metadata/OpenMetadata/pull/32886) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
-5. 🗣 Commented on [#32848](https://github.com/open-metadata/OpenMetadata/pull/32848#issuecomment-5570128639) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
+1. 🎉 Merged PR [#32530](https://github.com/open-metadata/OpenMetadata/pull/32530) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
+2. 🔒 Closed issue [#31692](https://github.com/open-metadata/OpenMetadata/issues/31692) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
+3. ℹ️ Assigned PR [#32886](https://github.com/open-metadata/OpenMetadata/pull/32886) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
+4. 🗣 Commented on [#31692](https://github.com/open-metadata/OpenMetadata/issues/31692#issuecomment-5579901758) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
+5. 🎉 Merged PR [#32373](https://github.com/open-metadata/OpenMetadata/pull/32373) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
 <!--END_SECTION:activity-->
 
 ---
