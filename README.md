@@ -80,7 +80,7 @@ Mostly working in Java and Spring Boot; care a lot about API contracts, integrat
 
 ### Recent Activity
 <!--START_SECTION:activity-->
-1. 💪 Opened PR [#34288](https://github.com/open-metadata/OpenMetadata/pull/34288) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
+1. 🎉 Merged PR [#34288](https://github.com/open-metadata/OpenMetadata/pull/34288) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
 2. 🎉 Merged PR [#32835](https://github.com/open-metadata/OpenMetadata/pull/32835) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
 3. 🎉 Merged PR [#34197](https://github.com/open-metadata/OpenMetadata/pull/34197) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
 4. 🔒 Closed issue [#34212](https://github.com/open-metadata/OpenMetadata/issues/34212) in [open-metadata/OpenMetadata](https://github.com/open-metadata/OpenMetadata)
